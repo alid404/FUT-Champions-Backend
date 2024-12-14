@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Orbitron&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Didact Gothic', sans-serif;
+}
+
+body {
+    background: rgb(2,0,36);
+    background: linear-gradient(195deg, rgb(11, 7, 85) 0%, rgba(9,9,121,1) 35%, rgb(0, 89, 255) 100%);
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(102, 121, 228);
+    padding: 8px;
+}
+
+.nav a img {
+    margin-left: 20px;
+    height: 100px;
+    width: 100px;
+}
+
+.nav a h2 {
+    color: rgb(202, 202, 202);
+    font-size: 20px;
+}
+
+.nav button {
+    margin-right: 20px;
+    padding-inline: auto;
+    height: 50px;
+    width: 110px;
+    font-size: 15px;
+    border-radius: 20px;
+    background-color: rgb(41, 25, 185);
+    color: white;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.nav button:hover {
+    background-color: rgb(25, 0, 255);
+    color: white;
+    cursor: pointer;
+}
+
+.nav a {
+    margin-right: 20px;
+    text-decoration-color: none;
+
+}
+
+.nav a img {
+    height: 40px;
+    width: 40px;
+}
+
+.nav a img:hover {
+    fill: white;
+}
+
+
+
+main {
+    height: 100vh;
+}
+
+.dashContainer {
+    display: flex;
+}
+
+.dashContainer aside {
+    background-color: rgb(0, 0, 0);
+    width: 25%;
+    height: 100%;
+    color: white;
+}
+
+.dashContainer section {
+    margin: 50px;
+    color: white;
+}
