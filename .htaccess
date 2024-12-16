@@ -1,0 +1,13 @@
+<IfModule mod_headers.c>
+    # Set Content Security Policy (CSP) to report violations (but not block)
+    Header set Content-Security-Policy-Report-Only "default-src 'self'; script-src 'self' https:; img-src 'self' https: data:; style-src 'self' 'unsafe-inline'; font-src 'self'; object-src 'none'; report-uri /csp-report-endpoint/"
+
+    # Set Cache-Control header to prevent caching of the page
+    Header set Cache-Control "no-store, no-cache, must-revalidate, max-age=0"
+
+    # Set X-Content-Type-Options to prevent MIME type sniffing
+    Header set X-Content-Type-Options "nosniff"
+
+    # Set Strict-Transport-Security (HSTS) header to force HTTPS
+    Header set Strict-Transport-Security "max-age=31536000; includeSubDomains"
+</IfModule>
